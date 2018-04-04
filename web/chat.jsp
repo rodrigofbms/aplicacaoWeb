@@ -8,9 +8,23 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>CHAT DO MEU BOM!</title>
 </head>
 <body>
-
+<h1 align="center">
+    BEM VINDO, <% out.print(session.getAttribute("login")+ "!");%>
+</h1>
+<br>
+    <div align="center">
+<textarea readonly rows="40" cols="90" style="resize: none"><%if(application.getAttribute("mensagem") != null) {
+        out.print(application.getAttribute("mensagem"));
+    }
+    %>
+</textarea> <br>
+    <form method="post" action="ChatServlet">
+<input type="text" name="mensagem"> <br>
+<button type="submit">Enviar </button>
+    </form>
+</div>
 </body>
 </html>

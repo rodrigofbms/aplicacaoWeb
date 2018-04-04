@@ -8,9 +8,18 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
   <head>
-    <title>$Title$</title>
-  </head>
+    <title>BEM VINDO AO CHAT DO MEU BOM!<!doctype html></title>
+      </head>
   <body>
-  $END$
+  <div align="center">
+  <form action="LoginServlet" method="post">
+  <input type = "text" name = "login"> <br>
+  <input type="password" name="senha"> <br>
+  <button type="submit"> Entrar </button> <br>
+  </form>
+  <form action="register.jsp" method = "post">
+    <button type = "submit">Não é cadastrado ?</button>
+  </form>
+  </div>
   </body>
 </html>
