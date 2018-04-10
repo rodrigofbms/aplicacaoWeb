@@ -12,7 +12,7 @@
 </head>
 <body>
 <div align="center">
-    <form method="post" action="sevletRegister">
+    <form method="post" action="RegisterServlet">
 Login: <input type="text" name = "loginRegister">
 Password: <input type="password" name="passwordRegister">
     Comfirm Passaword: <input type="text" name="passwordRegisterConfirm">
